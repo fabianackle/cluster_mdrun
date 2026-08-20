@@ -30,6 +30,6 @@ process MDRUN {
     script:
     """
     gmx -version > gromacs_version.log
-    gmx mdrun -v -deffnm ${tpr} -pin on -pinstride 1
+    gmx mdrun -v -deffnm ${sample_id} -pin on -pinstride 1
     """
 }
